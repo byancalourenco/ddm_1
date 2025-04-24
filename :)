@@ -1,0 +1,33 @@
+if entrada = 1 and saida = 2: // Celsius → Fahrenheit
+   resposta = (valor * 9 / 5) + 32
+
+if entrada = 1 and saida = 3: // Celsius → Kelvin
+   resposta = valor + 273.15
+
+if entrada = 2 and saida = 1: // Fahrenheit → Celsius
+   resposta = (valor - 32) * 5 / 9
+
+if entrada = 2 and saida = 3: // Fahrenheit → Kelvin
+   resposta = ((valor - 32) * 5 / 9) + 273.15
+
+if entrada = 3 and saida = 1: // Kelvin → Celsius
+   resposta = valor - 273.15
+
+if entrada = 3 and saida = 2: // Kelvin → Fahrenheit
+   resposta = ((valor - 273.15) * 9 / 5) + 32
+
+if entrada = saida:
+   resposta = valor
+
+4. Botão de conversão
+Mesmo funcionamento:
+
+Verifica se valor.Text é vazio ou "0"
+
+Se não for:
+
+Chama converter com os índices de SelectionEntrada e SelectionSaida
+
+Abre a tela Res_temp e passa o valor de global resposta
+
+
